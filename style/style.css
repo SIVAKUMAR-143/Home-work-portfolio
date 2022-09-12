@@ -1,0 +1,259 @@
+/* Google fonts added */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+@import url('http://fonts.cdnfonts.com/css/franky');
+
+/* End */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    transition: all 0.5s;
+    scroll-behavior: smooth;
+}
+
+
+
+/* ####################################
+##########  NavBar  Section   ########### 
+########################################*/
+section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #00ffb3; */
+}
+
+
+
+/* #home{background: #A6F2DB;}  */
+#skill {
+    background: #678EB4;
+}
+
+#contact {
+    background: #37E2D5;
+}
+/* 
+#about {
+    background: #7BCACE;
+} */
+
+#project {
+    background-color: #4F4E79;
+}
+
+header {
+    position: fixed;
+z-index: 4;
+    width: 100%;
+    height: 75px;
+    /* background:linear-gradient(rgba(23,33,0,1.2), rgba(0,0,0,1.2)); */
+
+}
+
+nav {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
+
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: xx-large;
+    /* position: relative; */
+
+}
+
+a {
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+    font-size: x-large;
+    transition: all 0.5;
+    position: relative;
+    display: inline-block;
+
+
+}
+
+ul li a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    /* left: 0; */
+    transform: scaleX(0);
+    transform-origin: right;
+    border: 0px solid #6231A3;
+    background-color: #6231A3;
+    transition: all 0.3s;
+}
+
+ul li a:hover::before {
+    /* background-color: #6230A3; */
+    border: 1px solid #6231A3;
+    transform: scaleX(1);
+    /* transition: all 0.5s; */
+    transform-origin: left;
+
+}
+
+.logo {
+    width: auto;
+    height: 120px;
+
+}
+
+/* ####################################
+##########  Home section ########### 
+########################################*/
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/bg2.jpg');
+    background-position: center;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-area {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ff0073;
+}
+
+.para {
+    font-size: xx-large;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family: 'Franky', sans-serif;
+
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: xx-large;
+    color: #FEC200;
+    line-height: 3rem;
+    position: relative;
+
+
+}
+
+.line {
+    /* position: absolute; */
+
+
+    width: 30%;
+    border-radius: 30px;
+    height: auto;
+    border-bottom: 4px solid #ff0073;
+}
+
+span,
+.product-page {
+    color: #ff0073;
+    cursor: pointer;
+    position: relative;
+    font-size: xx-large;
+
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ff0073;
+    bottom: 4px;
+    left: 0;
+    transform-origin: bottom left;
+    transform: scaleX(0);
+    transition: all 0.5s;
+}
+
+span:hover:before {
+    transform: scaleX(1);
+    /* transform-origin: bottom right; */
+}
+
+/* ####################################
+##########  About Section   ########### 
+########################################*/
+#about{
+  
+  
+   
+}
+.about-content{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 183, 255, 0.301),rgba(140, 139, 141, 0.329)),url('image/KARAIKAL\ IMAGE.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 100%;
+}
+.about-text{
+    width: 50%;
+    margin: 20%;
+    position: absolute;
+    margin-top: 20%;
+    
+}
+.about-text p{
+color: white;   
+display: flex;
+justify-content: center;
+align-items:center;
+position: absolute; 
+}
+
+svg{
+    width: 100%;
+
+    display: flex;
+    justify-content:center;
+    position:relative;
+    align-items: center;
+    top: 57%;
+    
+}
