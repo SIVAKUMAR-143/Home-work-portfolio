@@ -4,6 +4,11 @@
 
 @import url('http://fonts.cdnfonts.com/css/franky');
 
+
+@import url('http://fonts.cdnfonts.com/css/boldenvan');
+
+
+@import url('http://fonts.cdnfonts.com/css/broken-console');
 /* End */
 
 * {
@@ -169,12 +174,13 @@ ul li a:hover::before {
 
 }
 
-h1 {
+.home-container .content-area h1 {
     text-transform: capitalize;
     font-size: xx-large;
-    color: #FEC200;
+    color: #ff914d;
     line-height: 3rem;
     position: relative;
+    bottom: -2px;
 
 
 }
@@ -227,27 +233,38 @@ span:hover:before {
 .about-content{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 183, 255, 0.301),rgba(140, 139, 141, 0.329)),url('image/KARAIKAL\ IMAGE.jpg');
+    background: linear-gradient( rgba(145, 235, 241, 0.274),rgba(7, 7, 7, 0.699)),url('image/KARAIKAL\ IMAGE.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 100%;
+
 }
 .about-text{
-    width: 50%;
+    width: 100%;
     margin: 20%;
     position: absolute;
     margin-top: 20%;
     
 }
 .about-text p{
-color: white;   
+    width: 30%;
+color: rgb(255, 8, 193);  
 display: flex;
 justify-content: center;
 align-items:center;
 position: absolute; 
+font-family: 'BoldenVan', sans-serif;
+letter-spacing: 1px;
+font-size: xx-large;
+-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: .9px;
+-webkit-text-stroke-color: rgb(0, 238, 255);
+
+                                                
+                                                
 }
 
-svg{
+/* svg{
     width: 100%;
 
     display: flex;
@@ -256,7 +273,11 @@ svg{
     align-items: center;
     top: 57%;
     
-}
-.content-area h1{
-    color: #37E2D5;
+} */
+.title-about{
+    width: 100%;
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Broken Console', sans-serif !important;
+                                             
 }
